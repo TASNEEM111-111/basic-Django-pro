@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% comment %} <h1>testt</h1>
+name ={{name|add:' selim'}}
+<h2>age={{age|filesizeformat}}</h2> {% endcomment %}
+{% load static %}
+{% block content %}
+
+<h1>index pages </h1>
+
+<img src="{% static 'image/pic11.jpg' %}" alt="">
+
+        {% comment %} {% for x in name %}
+                <p> {{x}} </p>
+        {% endfor %}
+
+        {% if name == 'ali' %}
+        <p> welcom </p>
+        {% elif name == 'tasneem' %}
+        <p> hallo </p>
+        {% endif %} {% endcomment %}
+
+{% endblock content %}

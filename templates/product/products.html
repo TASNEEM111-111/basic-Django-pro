@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+{% comment %} {% for x in product %}
+<h1>{{x.name}}</h1>
+<h2>{{x.content}}</h2>
+<h2>{{x.price}}</h2>
+{% endfor %} {% endcomment %}
+
+ {% for m in product %}
+<p>
+    {{m.name}}
+    {{m.price}}
+</p>
+<img src="{{m.image.url}}" alt="">
+{% endfor %} 
+{% comment %} <h1>Product Count</h1>
+<p>Total number of products: {{ product }}</p> {% endcomment %}
+
+
+{% endblock content %}
