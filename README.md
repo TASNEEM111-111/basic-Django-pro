@@ -20,13 +20,20 @@ Follow these steps to set up and run the project:
    ```bash
    git remote add origin https://github.com/TASNEEM111-111/basic-Django-pro.git
    cd basic-Django-pro
-2.Create and Activate a Virtual Environment:
-   python -m venv venv
+2. **Create and Activate a Virtual Environment::**
+   ```bash
+  python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-3. Install Dependencies:
+   
+3. **Install Dependencies:**
+   ```bash
     pip install -r requirements.txt
-4.Apply Database Migrations:
+4. **Apply Database Migrations:**
+   ```bash
     python manage.py migrate
-5. Run the Development Server:
+5. **Run the Development Server:**
+   ```bash
     python manage.py runserver
+
+ 
 
